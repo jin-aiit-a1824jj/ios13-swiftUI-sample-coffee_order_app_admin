@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		65C719E02447066900F14D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C719DF2447066900F14D07 /* Assets.xcassets */; };
 		65C719E32447066900F14D07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C719E22447066900F14D07 /* Preview Assets.xcassets */; };
 		65C719E62447066900F14D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C719E42447066900F14D07 /* LaunchScreen.storyboard */; };
+		65C719EE2447073400F14D07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65C719ED2447073400F14D07 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		65C719E22447066900F14D07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65C719E52447066900F14D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65C719E72447066900F14D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65C719ED2447073400F14D07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		94FDA73B29F130F8C3247C35 /* Pods_CoffeeOrder_Admin_sampel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeOrder_Admin_sampel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,7 +50,6 @@
 				6011D40FDDAD33CE24C3DA99 /* Pods-CoffeeOrder_Admin_sampel.debug.xcconfig */,
 				5DC40A03BE2D02DB3A6AB164 /* Pods-CoffeeOrder_Admin_sampel.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +80,7 @@
 				65C719DF2447066900F14D07 /* Assets.xcassets */,
 				65C719E42447066900F14D07 /* LaunchScreen.storyboard */,
 				65C719E72447066900F14D07 /* Info.plist */,
+				65C719ED2447073400F14D07 /* GoogleService-Info.plist */,
 				65C719E12447066900F14D07 /* Preview Content */,
 			);
 			path = CoffeeOrder_Admin_sampel;
@@ -161,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65C719E62447066900F14D07 /* LaunchScreen.storyboard in Resources */,
+				65C719EE2447073400F14D07 /* GoogleService-Info.plist in Resources */,
 				65C719E32447066900F14D07 /* Preview Assets.xcassets in Resources */,
 				65C719E02447066900F14D07 /* Assets.xcassets in Resources */,
 			);

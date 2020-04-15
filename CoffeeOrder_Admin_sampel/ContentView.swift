@@ -9,8 +9,39 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var orderListener = OrderListener()
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List {
+                Section(header: Text("Active Order"), content: {
+                    ForEach(self.orderListener.activeOrders ?? [ ] ) { order in
+                        NavigationLink(destination: OrderDetailView(), label: {
+                            HStack{
+                                Text(order.customerName)
+                                Spacer()
+                                Text("\(order.amount.clean)")
+                            }
+                        })
+                    }
+                })//Section
+                
+                Section(header: Text("Completed Order"), content: {
+                    ForEach(self.orderListener.completedOrders ?? [ ] ) { order in
+                        NavigationLink(destination: OrderDetailView(), label: {
+                            HStack{
+                                Text(order.customerName)
+                                Spacer()
+                                Text("\(order.amount.clean)")
+                            }
+                        })
+                    }
+                })//Section
+                
+            }//List
+            .navigationBarTitle("Orders")
+        }//NavigationView
     }
 }
 

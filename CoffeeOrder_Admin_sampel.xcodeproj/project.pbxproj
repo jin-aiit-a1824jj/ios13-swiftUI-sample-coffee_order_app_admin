@@ -22,6 +22,7 @@
 		65C71A00244709C900F14D07 /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C719FF244709C900F14D07 /* FirebaseReference.swift */; };
 		65C71A01244709C900F14D07 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C719FD244709C900F14D07 /* Constants.swift */; };
 		65C71A02244709C900F14D07 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C719FE244709C900F14D07 /* Extensions.swift */; };
+		65C71A0624470E7400F14D07 /* OrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C71A0524470E7400F14D07 /* OrderDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		65C719FD244709C900F14D07 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		65C719FE244709C900F14D07 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		65C719FF244709C900F14D07 /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
+		65C71A0524470E7400F14D07 /* OrderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailView.swift; sourceTree = "<group>"; };
 		94FDA73B29F130F8C3247C35 /* Pods_CoffeeOrder_Admin_sampel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeOrder_Admin_sampel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,6 +101,7 @@
 				65C719ED2447073400F14D07 /* GoogleService-Info.plist */,
 				65C719E12447066900F14D07 /* Preview Content */,
 				65C719F52447090A00F14D07 /* OrderListener.swift */,
+				65C71A0524470E7400F14D07 /* OrderDetailView.swift */,
 			);
 			path = CoffeeOrder_Admin_sampel;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				65C71A02244709C900F14D07 /* Extensions.swift in Sources */,
 				65C719DC2447066800F14D07 /* SceneDelegate.swift in Sources */,
 				65C719FC244709C400F14D07 /* Drink.swift in Sources */,
+				65C71A0624470E7400F14D07 /* OrderDetailView.swift in Sources */,
 				65C719DE2447066800F14D07 /* ContentView.swift in Sources */,
 				65C71A01244709C900F14D07 /* Constants.swift in Sources */,
 			);

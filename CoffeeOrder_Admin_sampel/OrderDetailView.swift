@@ -20,7 +20,7 @@ struct OrderDetailView: View {
                 
                 Section(header: Text("Customer"), content: {
                     NavigationLink(destination: UserDetailView(order: order), label: {
-                        Text(order.customerName)
+                        Text(self.order.customerName)
                             .font(.headline)
                     })
                 })//Section

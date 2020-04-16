@@ -11,22 +11,31 @@ import SwiftUI
 struct UserDetailView: View {
     
     var order: Order
-    
+    @State var user:FUser?
     var body: some View {
         List {
-        
+            
             Section {
                 
-                Text("name")
-                Text("email")
-                Text("phone")
-                Text("address")
+                Text(user?.fullName ?? "")
+                Text(user?.email ?? "")
+                Text(user?.phoneNumber ?? "")
+                Text(user?.fullAddress ?? "")
                 
             }//Section
             
         }//List
-        .listStyle(GroupedListStyle())
-        .navigationBarTitle("User Profile")
+            .listStyle(GroupedListStyle())
+            .navigationBarTitle("User Profile")
+            .onAppear(perform: {
+                self.getUser()
+            })
+    }
+    
+    private func getUser() {
+        downloadUser(userID: order.customerId) { (fuser) in
+            self.user = fuser
+        }
     }
 }
 

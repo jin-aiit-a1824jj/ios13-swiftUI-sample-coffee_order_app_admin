@@ -19,7 +19,10 @@ struct OrderDetailView: View {
             List {
                 
                 Section(header: Text("Customer"), content: {
-                    Text(order.customerName)
+                    NavigationLink(destination: UserDetailView(order: order), label: {
+                        Text(order.customerName)
+                            .font(.headline)
+                    })
                 })//Section
                 
                 Section(header: Text("Order Item"), content: {
@@ -35,7 +38,12 @@ struct OrderDetailView: View {
             }//List
             
         }//VStack
-            .navigationBarTitle("Order", displayMode: .inline)
+        .navigationBarTitle("Order", displayMode: .inline)
+        .navigationBarItems(trailing:
+            Button(action: {
+                print("Complete Order")
+            }, label: {Text("Complete Order")})
+        )
     }
     
 }

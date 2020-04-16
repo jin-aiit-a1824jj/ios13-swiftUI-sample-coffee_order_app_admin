@@ -42,8 +42,16 @@ struct OrderDetailView: View {
         .navigationBarItems(trailing:
             Button(action: {
                 print("Complete Order")
+                self.markAsCompleted()
             }, label: {Text("Complete Order")})
         )
+    }
+    
+    private func markAsCompleted() {
+        if !order.isCompleted{
+            order.isCompleted = true
+            order.saveOrderToFirestore()
+        }
     }
     
 }

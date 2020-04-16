@@ -21,7 +21,7 @@ struct ContentView: View {
                             HStack{
                                 Text(order.customerName)
                                 Spacer()
-                                Text("\(order.amount.clean)")
+                                Text("$ \(order.amount.clean)")
                             }
                         })
                     }
